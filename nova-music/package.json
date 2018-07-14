@@ -1,0 +1,24 @@
+{
+  "name": "nova-music",
+  "version": "2.0.1",
+  "description": "Music bot for the Makeshift Discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Discord"
+  ],
+  "author": "NKN1396",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.2.1",
+    "discord.js-commando": "github:gawdl3y/discord.js-commando#11.2",
+    "ffmpeg-binaries": "^3.2.2",
+    "moment": "^2.20.1",
+    "opusscript": "0.0.3",
+    "youtube-search": "^1.0.10",
+    "ytdl-core": "github:fent/node-ytdl-core"
+  },
+  "devDependencies": {}
+}

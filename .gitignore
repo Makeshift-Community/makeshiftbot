@@ -1,0 +1,12 @@
+# Dependencies
+nova-logs/node_modules
+nova-makeshift/node_modules
+nova-music/node_modules
+kanna/node_modules
+
+# Token
+token.json
+
+#Settings
+nova.code-workspace
+.eslintrc.js
