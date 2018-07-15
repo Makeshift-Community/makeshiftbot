@@ -8,7 +8,7 @@ module.exports = class moderative_lock extends commando.Command {
 				"lock",
 				"lockdown"
 			],
-			group: "debug",
+			group: "moderative",
 			memberName: "lock",
 			description: "Locks a channel for a specified period",
 			guildOnly : true

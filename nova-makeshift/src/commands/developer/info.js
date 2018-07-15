@@ -2,7 +2,7 @@ const commando = require("discord.js-commando");
 const info = require("./../../../package.json");
 const stripIndents = require("common-tags").stripIndents;
 
-module.exports = class debug_info extends commando.Command {
+module.exports = class command extends commando.Command {
 	constructor(client) {
 		super(client, {
 			name: "info",
@@ -10,8 +10,8 @@ module.exports = class debug_info extends commando.Command {
 				"info",
 				"about"
 			],
-			group: "debug",
 			memberName: "info",
+			group: "developer",
 			description: 'Displays information about this bot.'
 		});
 	}

@@ -1,15 +1,15 @@
 const commando = require("discord.js-commando");
 
-module.exports = class moderative_mute extends commando.Command {
+module.exports = class command extends commando.Command {
 	constructor(client) {
 		super(client, {
-			name: "mute",
+			name: "note",
 			aliases: [
-				"mute"
+				"note"
 			],
 			group: "moderative",
-			memberName: "mute",
-			description: "Mutes a member for a specified period",
+			memberName: "note",
+			description: "",
 			guildOnly : true
 		});
 	}

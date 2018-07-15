@@ -1,14 +1,14 @@
 const commando = require("discord.js-commando");
 
-module.exports = class other_shutdown extends commando.Command {
+module.exports = class command extends commando.Command {
 	constructor(client) {
 		super(client, {
 			name: "shutdown",
 			aliases: [
 				"shutdown"
 			],
-			group: "other",
 			memberName: "shutdown",
+			group: "developer",
 			description: "Shuts a part of Nova down",
 			ownerOnly : true
 		});

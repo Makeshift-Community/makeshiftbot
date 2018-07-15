@@ -1,14 +1,14 @@
 const commando = require("discord.js-commando");
 
-module.exports = class other_restart extends commando.Command {
+module.exports = class command extends commando.Command {
 	constructor(client) {
 		super(client, {
 			name: "restart",
 			aliases: [
 				"restart"
 			],
-			group: "other",
 			memberName: "restart",
+			group: "developer",
 			description: "Restarts a part of Nova",
 			ownerOnly : true
 		});

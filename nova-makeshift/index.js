@@ -21,7 +21,7 @@ require("./src/modules/voicemagic")(makeshiftbot);
 //Configure & load command registry
 makeshiftbot.registry
 	.registerGroups([
-		["debug", "DEBUG_INFO"],
+		["developer", "Developer"],
 		["makeshift", "Makeshift"],
 		["resources", "Resources"],
 		["music", "Music"],
@@ -53,4 +53,3 @@ makeshiftbot.login(token)
 		makeshiftbot.user.setActivity(("@" + makeshiftbot.user.username + " help"), {type: "PLAYING"});
 		makeshiftbot.users.get("153595272465743872").send("✅ **Debug**:\n`nova-makeshift` has been restarted.");
 	});
-	

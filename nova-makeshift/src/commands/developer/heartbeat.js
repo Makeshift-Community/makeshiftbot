@@ -1,6 +1,6 @@
 const commando = require("discord.js-commando");
 
-module.exports = class other_heartbeat extends commando.Command {
+module.exports = class command extends commando.Command {
 	constructor(client) {
 		super(client, {
 			name: "heartbeat",
@@ -8,8 +8,8 @@ module.exports = class other_heartbeat extends commando.Command {
 				"heartbeat",
 				"ping"
 			],
-			group: "other",
 			memberName: "heartbeat",
+			group: "developer",
 			description: "Checks which parts of Nova are running"
 		});
 	}
