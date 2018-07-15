@@ -10,3 +10,6 @@ token.json
 #Settings
 nova.code-workspace
 .eslintrc.js
+
+#logs
+*.log
