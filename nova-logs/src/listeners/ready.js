@@ -1,4 +1,4 @@
-const moment = require("moment");
+var moment = require("moment");
 
 module.exports = function(client){
 	console.log("nova-logs");

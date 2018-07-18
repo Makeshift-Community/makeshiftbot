@@ -1,4 +1,4 @@
-const moment = require("moment");
+var moment = require("moment");
 
 module.exports = function(client, channel){
 	function send_embed_aliasChange(alias_old, alias_new, user){

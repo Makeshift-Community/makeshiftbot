@@ -1,5 +1,5 @@
-const Discord = require("discord.js");
-const bot = new Discord.Client;
+var Discord = require("discord.js");
+var bot = new Discord.Client;
 
 bot.login()
 	.then(function(){

@@ -1,4 +1,4 @@
-const sample = require("lodash").sample;
+var { sample } = require("lodash");
 
 /**
  * Returns a single item from an array. If an invalid index is specified, a random item gets called instead.

@@ -1,9 +1,9 @@
 //External dependencies
-const commando = require("discord.js-commando");
-const path = require("path");
+var commando = require("discord.js-commando");
+var path = require("path");
 
 //Start
-const makeshiftBot = new commando.Client({
+var makeshiftBot = new commando.Client({
 	commandPrefix : "/",
 	unknownCommandResponse : false,
 	owner : "153595272465743872",

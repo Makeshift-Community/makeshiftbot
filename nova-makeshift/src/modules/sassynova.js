@@ -2,7 +2,7 @@
 const trigger = "Nova,";
 
 //Dependencies
-const _ = require("lodash");
+var { sample } = require("lodash");
 
 /**
  * Makes Nova respond with sassy comments after asked a question.
@@ -92,5 +92,5 @@ function answer(message){
 		"Not on my watch",
 		"**NEIN!**"
 	];
-	return _.sample(responses);
+	return sample(responses);
 }

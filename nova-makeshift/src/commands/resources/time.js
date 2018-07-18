@@ -1,7 +1,8 @@
-const commando = require("discord.js-commando");
-const moment = require("moment");
+var { Command } = require("discord.js-commando");
+var moment = require("moment");	//TODO: Rewrite to Luxon
+var leftPad = require("left-pad");
 
-module.exports = class resources_time extends commando.Command {
+module.exports = class command extends Command {
 	constructor(client) {
 		super(client, {
 			name: "time",
@@ -18,10 +19,9 @@ module.exports = class resources_time extends commando.Command {
 
 	async run(msg, args) {
 		var timeNow = moment().utc();
-		var out = "";
-		out += '**';
 		var minutesUntilReset = Math.floor(moment.duration(moment(timeNow).endOf('day').diff(timeNow)) / 60000);
 		var minutesWithoutHours = minutesUntilReset % 60;
+		minutesWithoutHours = 0;
 		return msg.channel.send(
 			`Current time: **${timeNow.format('HH:mm')}** *(UTC+0)*.`, {
 			embed:{
@@ -32,7 +32,7 @@ module.exports = class resources_time extends commando.Command {
 					},
 					{
 						name:"Daily reset in",
-						value:`${Math.floor(minutesUntilReset/60)}:${(minutesWithoutHours<10)?"0":""}${minutesWithoutHours}`
+						value:`${Math.floor(minutesUntilReset/60)}:${leftPad(minutesWithoutHours,2,"0")}`
 					}
 				]
 			}

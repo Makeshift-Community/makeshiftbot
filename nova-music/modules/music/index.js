@@ -1,6 +1,6 @@
-const ytdl = require("ytdl-core");
-const yts = require("youtube-search");
-const googleApiToken = require("./../../../token.json").googleAPI;
+var ytdl = require("ytdl-core");
+var yts = require("youtube-search");
+var googleApiToken = require("./../../../token.json").googleAPI;
 
 module.exports = function (client, channel_text_music_id) {
 	let queues = {};
@@ -57,7 +57,7 @@ module.exports = function (client, channel_text_music_id) {
 		})
 		/*.on("", (info) => {
 			// Clear the queue.
-			const queue = getQueue(msg.guild.id);
+			var queue = getQueue(msg.guild.id);
 			queue.splice(0, queue.length);
 
 			// End the stream and disconnect.
@@ -85,7 +85,7 @@ module.exports = function (client, channel_text_music_id) {
 		} 
 
 		// Get the queue.
-		const queue = getQueue(msg.guild.id);
+		var queue = getQueue(msg.guild.id);
 		//msg.channel.send("Searched for: " + suffix);
 
 

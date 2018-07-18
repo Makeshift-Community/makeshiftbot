@@ -1,11 +1,11 @@
 //External dependencies
-const commando = require("discord.js-commando");
-const path = require("path");
-const moment = require("moment");
+var commando = require("discord.js-commando");
+var path = require("path");
+var moment = require("moment");
 //Load information from package.json
-const token = require("./../token.json").nova;//I'm an idiot - Thanks for the lesson
+var token = require("./../token.json").nova;//I'm an idiot - Thanks for the lesson
 //Start
-const makeshiftbot = new commando.Client({
+var makeshiftbot = new commando.Client({
 	commandPrefix : "/",
 	unknownCommandResponse : false,
 	owner : "153595272465743872"

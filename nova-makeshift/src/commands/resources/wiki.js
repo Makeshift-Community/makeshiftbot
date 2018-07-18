@@ -1,6 +1,6 @@
-const commando = require("discord.js-commando");
+var { Command } = require("discord.js-commando");
 
-module.exports = class resources_wiki extends commando.Command {
+module.exports = class command extends Command {
 	constructor(client) {
 		super(client, {
 			name: "wiki",

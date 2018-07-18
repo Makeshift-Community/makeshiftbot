@@ -1,7 +1,7 @@
-const commando = require("discord.js-commando");
-const selectRandomly = require("./../../utils/selectRandomly");
+var { Command } = require("discord.js-commando");
+var selectRandomly = require("./../../utils/selectRandomly");
 
-module.exports = class memes_warframe_amesha extends commando.Command {
+module.exports = class command extends Command {
 	constructor(client) {
 		super(client, {
 			name: "amesha",

@@ -3,10 +3,10 @@ const channel_text_builds_id = "410741742489567233";
 const channel_text_warframe_id = "303662276013981697";
 
 //Dependencies
-const stripIndents = require("common-tags").stripIndents;
-const fs = require("fs");
-const path = require("path");
-const util = require("util");
+var { stripIndents } = require("common-tags");
+var fs = require("fs");
+var path = require("path");
+var util = require("util");
 
 /**
  * Moderates the #builds channel. This includes deleting messages without a build, giving the user feedback and sending the user their original message.
@@ -21,7 +21,7 @@ module.exports = function(client){
 		//Check message for criteria match. Message must have an image attached and contain the name of a Warframe or weapon.
 		if(message.attachments.size == 0){
 			//Check for Warframes and weapons specified.
-			const items = require("./resources/allitems.json");
+			var items = require("./resources/allitems.json");
 			for (var item of items){
 				if(message.content.toLowerCase().match(item)) return;
 			}

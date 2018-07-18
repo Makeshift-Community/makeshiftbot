@@ -1,8 +1,8 @@
-const commando = require("discord.js-commando");
-const info = require("./../../../package.json");
-const stripIndents = require("common-tags").stripIndents;
+var { Command } = require("discord.js-commando");
+var info = require("./../../../package.json");
+var { stripIndents } = require("common-tags");
 
-module.exports = class command extends commando.Command {
+module.exports = class command extends Command {
 	constructor(client) {
 		super(client, {
 			name: "info",

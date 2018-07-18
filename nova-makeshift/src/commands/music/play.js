@@ -1,7 +1,7 @@
-const commando = require("discord.js-commando");
-const oneLine = require('common-tags').oneLine;
+var { Command } = require("discord.js-commando");
+var { oneLine } = require('common-tags');
 
-module.exports = class music_play extends commando.Command {
+module.exports = class command extends Command {
 	constructor(client) {
 		super(client, {
 			name: "play",
