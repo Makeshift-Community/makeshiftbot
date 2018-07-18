@@ -9,7 +9,7 @@ module.exports = class command extends Command {
 				"colors",
 				"color"
 			],
-			group: 'other',
+			group: "other",
 			memberName: "colors",
 			description: "Changes your color.",
 			details: "Change your color or list all available colors.",
@@ -24,12 +24,12 @@ module.exports = class command extends Command {
 	async run(msg, args) {
 		msg.react("✅");
 		switch(args){
-			 case "red":
-				break;
-			 case "lime":
-			 case "badass":
-			 case "bada55":
-				break;
+		case "red":
+			break;
+		case "lime":
+		case "badass":
+		case "bada55":
+			break;
 		}
 		return;
 	}

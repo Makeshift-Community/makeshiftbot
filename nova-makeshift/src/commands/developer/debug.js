@@ -14,7 +14,7 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		msg.react("✅");
 		return msg.channel.send(
 			"Nothing"

@@ -12,11 +12,11 @@ module.exports = class command extends Command {
 			],
 			memberName: "info",
 			group: "developer",
-			description: 'Displays information about this bot.'
+			description: "Displays information about this bot."
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		var textInfo =
 		stripIndents`__**Nova version ${info.version}**__
 		${info.description}

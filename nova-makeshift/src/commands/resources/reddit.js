@@ -1,4 +1,5 @@
 var { Command } = require("discord.js-commando");
+var { stripIndents } = require("common-tags");
 
 module.exports = class command extends Command {
 	constructor(client) {
@@ -18,18 +19,18 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		var out =
-		"**Warframe subreddits: **\n" +
-		"\n" + 
-		"__r/Warframe__, the big one:\n" +
-		"<https://www.reddit.com/r/Warframe/>\n" +
-		"\n" + 
-		"__r/MemeFrame__, has some good stuff:\n" +
-		"<https://www.reddit.com/r/MemeFrame/>\n" +
-		"\n" + 
-		"__r/WarframeRunway__, some dank fashionframe:\n" +
-		"<https://www.reddit.com/r/WarframeRunway/>\n";
+		stripIndents`**Warframe subreddits: **
+		
+		__r/Warframe__, the big one:
+		<https://www.reddit.com/r/Warframe/>
+		
+		__r/MemeFrame__, has some good stuff:
+		<https://www.reddit.com/r/MemeFrame/>
+		
+		__r/WarframeRunway__, some dank fashionframe:
+		<https://www.reddit.com/r/WarframeRunway/>`;
 		msg.react("✅");
 		return msg.channel.send(out);
 	}

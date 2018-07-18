@@ -29,7 +29,7 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		var out =
 		"**Websites for trading in Warframe**\n" + 
 		"\n" +
@@ -40,7 +40,7 @@ module.exports = class command extends Command {
 		"*<https://nexus-stats.com/>*\n" + 
 		"\n" +
 		"__Warframe Trader__, a website for Riven trading:\n" +
-		"*<https://www.wftrader.com/>*"
+		"*<https://www.wftrader.com/>*";
 		msg.react("✅");
 		return msg.channel.send(out);
 	}

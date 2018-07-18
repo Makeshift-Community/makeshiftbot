@@ -15,7 +15,7 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		msg.react("✅");
 		return msg.channel.send(
 			{
@@ -23,7 +23,7 @@ module.exports = class command extends Command {
 					description: "Makeshift clan dojo map",
 					image: {
 						url: "https://cdn.discordapp.com/attachments/437703489347649539/437708566787260426/map.png"
-					 }
+					}
 				}
 			}
 		);

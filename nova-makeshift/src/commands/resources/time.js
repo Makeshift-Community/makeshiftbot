@@ -11,31 +11,31 @@ module.exports = class command extends Command {
 				"utc",
 				"reset"
 			],
-			group: 'resources',
+			group: "resources",
 			memberName: "time",
 			description: "Shows Warframe server time and time left until Warframe daily reset."
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		var timeNow = moment().utc();
-		var minutesUntilReset = Math.floor(moment.duration(moment(timeNow).endOf('day').diff(timeNow)) / 60000);
+		var minutesUntilReset = Math.floor(moment.duration(moment(timeNow).endOf("day").diff(timeNow)) / 60000);
 		var minutesWithoutHours = minutesUntilReset % 60;
 		minutesWithoutHours = 0;
 		return msg.channel.send(
-			`Current time: **${timeNow.format('HH:mm')}** *(UTC+0)*.`, {
-			embed:{
-				fields:[
-					{
-						name:"New sorties in",
-						value:"DE tied this to their regional time instead of a timezone. This is literally a pain to program."
-					},
-					{
-						name:"Daily reset in",
-						value:`${Math.floor(minutesUntilReset/60)}:${leftPad(minutesWithoutHours,2,"0")}`
-					}
-				]
-			}
-		});
+			`Current time: **${timeNow.format("HH:mm")}** *(UTC+0)*.`, {
+				embed:{
+					fields:[
+						{
+							name:"New sorties in",
+							value:"DE tied this to their regional time instead of a timezone. This is literally a pain to program."
+						},
+						{
+							name:"Daily reset in",
+							value:`${Math.floor(minutesUntilReset/60)}:${leftPad(minutesWithoutHours,2,"0")}`
+						}
+					]
+				}
+			});
 	}
 };

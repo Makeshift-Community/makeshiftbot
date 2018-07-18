@@ -5,7 +5,7 @@ module.exports = class command extends Command {
 		super(client, {
 			name: "dice",
 			aliases: ["r", "roll", "dice", "die"],
-			group: 'other',
+			group: "other",
 			memberName: "dice",
 			description: "Rolls one or more dice.",
 			details: "First number is the amount of dice, second number is the amount of sides.",
@@ -32,7 +32,7 @@ module.exports = class command extends Command {
 				return msg.channel.send("🎲 Rolled " + diceCommands[0].trim() + " times with a " + diceCommands[1].trim() + "-sided die: **" + result + "**\n```" + out + "```\n");
 			}
 		}
-		console.log("ERROR IN DICEROLL: " + message.content);
+		console.log("ERROR IN DICEROLL: " + msg.content);
 		return;
 	}
 };

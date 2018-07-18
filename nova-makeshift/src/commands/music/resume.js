@@ -15,7 +15,7 @@ module.exports = class command extends Command {
 		});
 	}
 	
-	async run(msg, args) {
+	async run() {
 		return;
 	}
 };

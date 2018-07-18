@@ -10,7 +10,7 @@ module.exports = class command extends Command {
 			],
 			group: "memes-warframe",
 			memberName: "disappointment",
-			description: "Baro Ki\'Teer"
+			description: "Baro Ki'Teer"
 		});
 	}
 	

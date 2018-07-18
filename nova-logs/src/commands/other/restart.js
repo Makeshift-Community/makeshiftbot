@@ -16,7 +16,7 @@ module.exports = class command extends Command {
 
 	async run(msg, args) {
 		if(args.toLowerCase() == "nova-logs"){
-			msg.react("📝")
+			msg.react("📝");
 			console.log("Bot restarted by user " + msg.author.tag);
 			process.exit(1);
 		}

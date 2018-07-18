@@ -12,7 +12,7 @@ module.exports = class command extends Command {
 			],
 			group: "memes-generic",
 			memberName: "ohno",
-			description: "OH NO (it\'s retarded)"
+			description: "OH NO (it's retarded)"
 		});
 	}
 

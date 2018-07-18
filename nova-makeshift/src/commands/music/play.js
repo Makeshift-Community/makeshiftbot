@@ -1,5 +1,5 @@
 var { Command } = require("discord.js-commando");
-var { oneLine } = require('common-tags');
+var { oneLine } = require("common-tags");
 
 module.exports = class command extends Command {
 	constructor(client) {
@@ -18,7 +18,7 @@ module.exports = class command extends Command {
 		});
 	}
 	
-	async run(msg, args) {
+	async run() {
 		return;
 	}
 };

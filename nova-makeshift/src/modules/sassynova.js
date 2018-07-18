@@ -44,7 +44,7 @@ function answer(message){
 			"You sound like a Limbo-main.",
 			"Fuck off"
 		];
-		return _.sample(responses);
+		return sample(responses);
 	}
 	//UNCOMMON
 	if((numberRandom*5)<1){
@@ -60,7 +60,7 @@ function answer(message){
 			"Okay",
 			"N-No!",
 		];
-		return _.sample(responses);
+		return sample(responses);
 	}
 	//COMMON
 	let responses = [

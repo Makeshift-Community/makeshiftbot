@@ -17,9 +17,9 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		msg.react("✅");
-		var username = msg.member.displayName.split('(').pop().split(')').shift().replace(/[^A-Za-z0-9.\-_]/g, '');
+		var username = msg.member.displayName.split("(").pop().split(")").shift().replace(/[^A-Za-z0-9.\-_]/g, "");
 		if(username){
 			return msg.channel.send("Your name is **" + username + "**.");
 		}

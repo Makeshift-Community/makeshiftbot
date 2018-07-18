@@ -18,9 +18,9 @@ module.exports = class command extends Command {
 		if(args.toLowerCase() == "nova-logs"){
 			console.log("Bot ended by user " + msg.author.tag);
 			msg.react("📝")
-			.then(function(){
-				msg.client.destroy();
-			});
+				.then(function(){
+					msg.client.destroy();
+				});
 		}
 		return;
 	}

@@ -17,7 +17,7 @@ module.exports = class command extends Command {
 		});
 	}
 
-	async run(msg, args) {
+	async run(msg) {
 		var out = 
 		"**Drop tables:**\n" +
 		"Official Warframe droprates:\n" +
