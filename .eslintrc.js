@@ -1,12 +1,12 @@
 module.exports = {
     "env": {
         "node": true,
-        "commonjs": true,
-        "es6": true
+        "commonjs": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
-        "sourceType": "module"
+        "sourceType": "module",
+		"ecmaVersion": 8
     },
     "rules": {
         "indent": [
