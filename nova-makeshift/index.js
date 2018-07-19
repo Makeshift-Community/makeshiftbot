@@ -13,7 +13,7 @@ var makeshiftbot = new commando.Client({
 
 //Activate modules
 require("./src/modules/greet")(makeshiftbot);
-require("./src/modules/modbuilds/index")(makeshiftbot);
+require("./src/modules/modbuilds")(makeshiftbot);
 require("./src/modules/sassynova")(makeshiftbot);
 require("./src/modules/soontm")(makeshiftbot);
 require("./src/modules/voicemagic")(makeshiftbot);
