@@ -16,6 +16,12 @@ require("./src/listeners/join")(makeshiftBot, "303662183558938625");
 require("./src/listeners/leave")(makeshiftBot, "303662183558938625");
 require("./src/listeners/rename")(makeshiftBot, "303662183558938625");
 
+//Start error handlers
+require("./src/listeners/error")(makeshiftBot);
+require("./src/listeners/disconnect")(makeshiftBot);
+require("./src/listeners/guildUnavailable")(makeshiftBot);
+
+
 //Configure & load command registry
 makeshiftBot.registry
 	.registerGroups([
