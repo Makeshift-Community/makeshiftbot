@@ -1,32 +1,32 @@
 {
-    "env": {
-        "node": true,
-        "commonjs": true
-    },
-    "extends": "eslint:recommended",
-    "parserOptions": {
-        "sourceType": "module",
+	"env": {
+		"node": true,
+		"commonjs": true
+	},
+	"extends": "eslint:recommended",
+	"parserOptions": {
+		"sourceType": "module",
 		"ecmaVersion": 8
-    },
-    "rules": {
-        "indent": [
-            "error",
+	},
+	"rules": {
+		"indent": [
+			"error",
 			"tab",
 			{
 				"SwitchCase": 1
 			}
-        ],
-        "linebreak-style": [
-            "error",
-            "unix"
-        ],
-        "quotes": [
-            "error",
-            "double"
-        ],
-        "semi": [
-            "error",
-            "always"
+		],
+		"linebreak-style": [
+			"error",
+			"unix"
+		],
+		"quotes": [
+			"error",
+			"double"
+		],
+		"semi": [
+			"error",
+			"always"
 		],
 		"no-console": [
 			"off"
@@ -34,6 +34,12 @@
 		"eol-last": [
 			"error",
 			"always"
+		],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 2
+			}
 		]
-    }
+	}
 }
