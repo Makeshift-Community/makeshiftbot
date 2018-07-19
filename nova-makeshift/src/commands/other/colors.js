@@ -11,7 +11,9 @@ module.exports = class command extends Command {
 			aliases:
 			[
 				"colors",
-				"color"
+				"color",
+				"colours",
+				"colour"
 			],
 			group: "other",
 			memberName: "colors",
