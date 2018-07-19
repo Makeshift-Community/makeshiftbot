@@ -24,34 +24,34 @@ module.exports = function (client, channel_text_music_id) {
 				var commands = command.trim().toLowerCase().split(" ");
 				var suffix = command.substring(commands[0].length).trim();
 				switch (commands[0]) {
-				case "play":
-				case "q":{
-					msg.react("🎶");
-					return play(msg, suffix);
-				}
-				case "skip":{
-					msg.react("🎶");
-					return skip(msg, suffix);
-				}
-				case "queue":
-				case "showqueue":
-				case "sq":{
-					msg.react("🎶");
-					return queue(msg, suffix);
-				}
-				case "pause":
-				case "p":{
-					msg.react("🎶");
-					return pause(msg, suffix);
-				}
-				case "resume":
-				case "unpause":{
-					msg.react("🎶");
-					return resume(msg, suffix);
-				}
-				case "stop":{
-					return leave(msg, suffix);
-				}
+					case "play":
+					case "q":{
+						msg.react("🎶");
+						return play(msg, suffix);
+					}
+					case "skip":{
+						msg.react("🎶");
+						return skip(msg, suffix);
+					}
+					case "queue":
+					case "showqueue":
+					case "sq":{
+						msg.react("🎶");
+						return queue(msg, suffix);
+					}
+					case "pause":
+					case "p":{
+						msg.react("🎶");
+						return pause(msg, suffix);
+					}
+					case "resume":
+					case "unpause":{
+						msg.react("🎶");
+						return resume(msg, suffix);
+					}
+					case "stop":{
+						return leave(msg, suffix);
+					}
 				}
 			}
 		})
