@@ -17,6 +17,7 @@ require("./src/modules/modbuilds/index")(makeshiftbot);
 require("./src/modules/sassynova")(makeshiftbot);
 require("./src/modules/soontm")(makeshiftbot);
 require("./src/modules/voicemagic")(makeshiftbot);
+require("./src/modules/prism2")(makeshiftbot);
 
 //Configure & load command registry
 makeshiftbot.registry
