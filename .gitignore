@@ -1,8 +1,6 @@
 # Dependencies
-nova-logs/node_modules
-nova-makeshift/node_modules
-nova-music/node_modules
-kanna/node_modules
+**/node_modules
+kanna/resources
 
 # Token
 token.json

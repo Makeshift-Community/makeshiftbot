@@ -1,6 +1,6 @@
 var { Command } = require("discord.js-commando");
 var moment = require("moment");	//TODO: Rewrite to Luxon
-var leftPad = require("left-pad");
+var pad = require("pad-left");
 
 module.exports = class command extends Command {
 	constructor(client) {
@@ -32,7 +32,7 @@ module.exports = class command extends Command {
 						},
 						{
 							name:"Daily reset in",
-							value:`${Math.floor(minutesUntilReset/60)}:${leftPad(minutesWithoutHours,2,"0")}`
+							value:`${Math.floor(minutesUntilReset/60)}:${pad(minutesWithoutHours,2,"0")}`
 						}
 					]
 				}

@@ -40,6 +40,13 @@
 			{
 				"max": 2
 			}
+		],
+		"valid-jsdoc": [
+			"error",
+			{
+				"requireReturn": false,
+				"requireReturnDescription": false
+			}
 		]
 	}
 }
