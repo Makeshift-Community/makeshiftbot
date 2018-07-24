@@ -60,7 +60,7 @@ module.exports = class command extends Command {
 };
 
 function returnColor(args){
-	switch(args){
+	switch(args.toLowerCase()){
 		case "turquoise":
 			return colors.turquoise;
 		case "green":
