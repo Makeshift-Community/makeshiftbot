@@ -19,7 +19,7 @@ module.exports = function(client){
 		//Check if message not written by Nova
 		if(message.author.id == client.user.id) return;
 		//Check message for criteria match. Message must have an image attached and contain the name of a Warframe or weapon.
-		if(message.attachments.size == 0){
+		if(message.attachments.size == 1){
 			//Check for Warframes and weapons specified.
 			var items = require("./resources/allitems.json");
 			for (var item of items){
