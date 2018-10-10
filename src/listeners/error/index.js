@@ -1,11 +1,14 @@
+/*
 var fs = require("fs");
 var path = require("path");
 var util = require("util");
 var moment = require("moment");
+*/
 
 module.exports = function(client){
 	client.on("error", (error) => {
-		console.log(error);
+		console.error(error);
+		/*
 		fs.writeFile(`${path.join(__dirname, "logs")}/${moment.utc().format()}.log`, util.inspect(error))
 			.then(function(){
 				console.log();
@@ -13,5 +16,6 @@ module.exports = function(client){
 			.catch((error_fs) => {
 				console.error(error_fs);
 			});
+		*/
 	});
 };
